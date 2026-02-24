@@ -22,15 +22,15 @@ function adicionarProduto() {
     } else if (codigo.value == '' || produto.value == '' || quantidade.value == '') {
         alert('Preencha todos os campos!')
     } else {
-        spanCodigo.className = 'bg-blue-200 px-8 py-2 w-5s h-1s'
-        spanProduto.className = 'bg-blue-200 px-8 py-2 w-5s h-1s'
-        spanQtde.className = 'bg-blue-200 px-8 py-2 w-5s h-1s'
+        spanCodigo.className = 'bg-blue-200 px-8 py-2 flex justify-center min-w-3xs'
+        spanProduto.className = 'bg-blue-200 px-8 py-2 flex justify-center min-w-3xs'
+        spanQtde.className = 'bg-blue-200 px-8 py-2 flex justify-center min-w-3xs'
 
         spanCodigo.textContent = codigo.value
         spanProduto.textContent = produto.value
         spanQtde.textContent = quantidade.value
 
-        linha.className = 'flex gap-2'
+        linha.className = 'flex gap-2 justify-center'
 
         linha.appendChild(spanCodigo)
         linha.appendChild(spanProduto)
