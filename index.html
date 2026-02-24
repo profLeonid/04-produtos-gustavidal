@@ -9,20 +9,10 @@
 </head>
 <body class="bg-gray-200 flex flex-col items-center justify-center h-screen gap-4">
     <h1 class="text-2xl">Listas Produtos</h1>
-    <input
-        type="text"
-        class="border p-2 rounded"
-        id="produto"
-    >
-    <button 
-        class="bg-blue-500 text-white px-2 py-2 rounded"
-        onclick="adicionarProduto()"
-    >
-        Adicionar
-    </button>
-    <div
-        id="lista"
-        class="flex flex-col gap-2"
-    ></div>
+    <input type="text" class="border p-2 rounded" id="codigo" placeholder="Código do produto">
+    <input type="text" class="border p-2 rounded" id="produto" placeholder="Nome do produto">
+    <input type="text" class="border p-2 rounded" id="quantidade" placeholder="Quantidade do produto">
+    <button class="bg-blue-500 text-white px-2 py-2 rounded" onclick="adicionarProduto()">Adicionar</button>
+    <div id="lista" class="flex flex-col gap-2"></div>
 </body>
 </html>
